@@ -4,4 +4,4 @@
 
 ## Flask & Bootstrap & Pythonanywhere
 
-*สัปดาห์นี้ได้เรียนรู้การใช้งาน Bootstrap ร่วมกีบ Flask*
+*สัปดาห์นี้ได้เรียนรู้การใช้งาน Bootstrap ร่วมกับ Flask*
