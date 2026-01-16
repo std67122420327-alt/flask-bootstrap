@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  {{title}}
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1>{{title}}</h1>
+    <hr>
+    <div class="card">
+      <div class="card-header bg-success text-light">
+        <h4>แก้ไขข้อมูลรถยนต์</h4>
+      </div>
+      <div class="card-body">
+        <form method="post">
+          <div class="mb-3">
+            <label for="id" class="form-label">รหัสรถยนต์</label>
+            <input disabled value="{{car.id}}"  name="id" type="number" class="form-control" id="id">
+          </div>
+          <div class="mb-3">
+            <label for="brand" class="form-label">ยี่ห้อรถยนต์</label>
+            <input value="{{car.brand}}" name="brand" type="text" class="form-control" id="brand">
+          </div>
+          <div class="mb-3">
+            <label for="model" class="form-label">รุ่นรถยนต์</label>
+            <input value="{{car.model}}"  name="model" type="text" class="form-control" id="model">
+          </div>
+          <div class="mb-3">
+            <label for="year" class="form-label">ปีที่ผลิต</label>
+            <input value="{{car.year}}"  name="year" type="number" class="form-control" id="year">
+          </div>
+          <div class="mb-3">
+            <label for="price" class="form-label">ราคารถยนต์</label>
+            <input value="{{car.price}}"  name="price" type="number" class="form-control" id="price">
+          </div>
+          
+          <button type="submit" class="btn btn-outline-success">
+            <i class="bi bi-pencil-square"></i>
+            Update Car
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+{% endblock %}
